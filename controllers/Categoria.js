@@ -212,3 +212,4 @@ const deleteCategoriaModalidad = async(req, resp = response) => {
 
 
 
+module.exports = { getCategoria, postCategoria, putCategoria, deleteCategoria, postCategoriaModalidad, deleteCategoriaModalidad}
