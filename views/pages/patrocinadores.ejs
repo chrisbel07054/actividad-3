@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../components/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../components/header'); %>
+</header>
+<main>
+    <% patrocinador.forEach(function(patrocinadorItem) { %>
+        <h2>Patrocinador:   <%= patrocinadorItem.nombreComercial %></h2>
+        <ul>
+                <li>Tipo de patrocinio:   <%= patrocinadorItem.patrocinio %></li>
+                <li>Persona Contacto:   <%= patrocinadorItem.personaContacto %></li>
+                <li>Telefono:   <%= patrocinadorItem.telefono %></li>
+        </ul>
+    <% }); %>
+
+</main>
+<footer>
+    <%- include('../components/footer'); %>
+</footer>
+
+</body>
+</html>
